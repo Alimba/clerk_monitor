@@ -1,0 +1,48 @@
+#print {
+	font-size: 10px;
+}
+
+@media print  
+{
+    div{
+        page-break-inside: avoid;
+    }
+}
+
+/**************** Monthly Report Simple********************/
+#print h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#print table {
+	text-align: center;
+}
+
+#print caption {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+
+#print thead {
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #dddddd;
+}
+
+#print tbody {
+	font-size: 10px;
+}
+
+#print tr {
+	line-height: 4px;
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+
+#print.each_table {
+	margin-bottom: 5px;
+	border: 1px solid #999999;
+}

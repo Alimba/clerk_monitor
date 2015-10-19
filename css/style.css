@@ -1,0 +1,492 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+/**************** Base Setup ****************/
+body {
+	font-family: 'Varela Round', sans-serif;
+	width: 100%;
+	margin: auto;
+	background: #333333;
+}
+
+#wraper {
+	width: 100%;
+	margin: auto;
+	padding: 0;
+
+	background: #eeeeee; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-8 */
+}
+
+footer {
+	text-align: center;
+	background-color: #333333;
+	width: 100%;
+	height: 115px;
+	margin-bottom: -10px;
+}
+
+footer p {
+	color: #999999;
+	padding-top: 80px;
+	font-size: 12px;
+}
+
+#container {
+	min-height: 75%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #333333;
+	clear: both;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+nav {
+	padding: 10px;
+}
+
+nav a {
+	margin: 10px;
+	padding: 10px;
+	color: #dddddd;
+	background-color: #666666;
+	text-decoration: none;
+	border-radius: 5px;
+
+	-webkit-transition: all 0.25s; /* Safari */
+    transition: all 0.25s;
+}
+
+#welcome {
+	color: #dddddd;
+}
+
+#back {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#back h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.error_msg {
+	margin-top: 15px;
+	font-size: 35px;
+	color: red;
+	opacity: 0;
+
+	/* Apply animation */
+	animation-name: opacity_fade_in_out;
+    animation-duration: 3s;
+	animation-iteration-count: 1;
+
+    -webkit-animation-name: opacity_fade_in_out; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+}
+
+.norm_msg {
+	margin-top: 15px;
+	font-size: 35px;
+	color: green;
+	opacity: 0;
+
+	/* Apply animation */
+	animation-name: opacity_fade_in_out;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+    -webkit-animation-name: opacity_fade_in_out; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+}
+/**************** Animations ***********************/
+
+/* The animation code */
+@keyframes opacity_fade_in_out {
+    0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {opacity: 0.75;}
+    100% {opacity: 0;}
+}
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes opacity_fade_in_out {
+  	0%   {opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {opacity: 0.75;}
+    100% {opacity: 0;}
+} 
+
+/**************** Hover items *********************/
+#drop_lst:hover,
+.button:hover,
+.btns:hover,
+.button_small:hover,
+.button_med:hover {
+	cursor:pointer;
+	background-color: #bbbbbb;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+nav a:hover {
+	box-shadow: 2px 2px 5px #9999cc;
+	
+	-webkit-transition: all 0.25s; /* Safari */
+    transition: all 0.25s;
+}
+/**************** Monthly Report Simple********************/
+#monthly-simple {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#monthly-simple h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#monthly-simple table {
+	text-align: center;
+}
+
+#monthly-simple caption {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+
+#monthly-simple thead {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #dddddd;
+}
+
+#monthly-simple tbody {
+	font-size: 12px;
+}
+
+/**************** Monthly Report ********************/
+#monthly {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#monthly h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#monthly table {
+	text-align: center;
+}
+
+#monthly caption {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+
+#monthly thead {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #dddddd;
+}
+
+#monthly tbody {
+	font-size: 12px;
+}
+
+/**************** Weekly Report ********************/
+#weekly {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#weekly h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#weekly table {
+	text-align: center;
+}
+
+#weekly caption {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+
+#weekly thead {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #dddddd;
+}
+
+#weekly tbody {
+	font-size: 12px;
+}
+
+.each_table {
+	margin-bottom: 15px;
+	border: 1px solid #999999;
+}
+/**************** Report Page **********************/
+#report_page {
+	padding-top: 25px;
+}
+#report_page h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/**************** Admin Page ***********************/
+#home_admin {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+#home_admin h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#home_admin tbody {
+	font-size: 12px;
+}
+
+#home_admin tbody tr:nth-child(odd) {
+	background-color: #bbbbbb;
+	border-radius: 5px;
+}
+
+#active {
+	
+}
+
+#inactive {
+
+}
+
+#admin_btn {
+	float: right;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+/**************** Rota Page ************************/
+#rota_page {
+	padding-top: 25px;
+	padding-bottom: 65px;	
+}
+
+#rota_page h4 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#rota_page caption {
+	font-size: 22px;
+	letter-spacing: 5px;
+	padding: 15px;
+}
+
+#rota_page thead {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+
+#rota_page table tr:nth-child(2n) {
+	height:  25px;
+}
+
+#rota_page table tr td {
+	min-width: 150px;
+	text-align: right;
+}
+
+#rota_page table tr td center {
+	margin-bottom: -20px;
+}
+
+#rota_page table tr td input {
+	font-size: 10px;
+	text-align: right;
+	float: right;
+}
+
+#rota_page table tr td label {
+	font-size: 11px;
+	text-align: left;
+	float: left;
+	padding-top: 5px;
+}
+
+/**************** Salons Page **********************/
+#clock_in {
+	margin-left: 200px;
+	padding-top: 20px;
+}
+
+#clock_in a {
+	margin: 20px;
+}
+
+#rota_table {
+	margin-top: 35px;
+}
+
+#rota_table thead {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #aaaaaa;
+}
+#rota_table tbody {
+	font-size: 14px;
+	text-align: center;
+}
+
+#rota_table tr:nth-child(6n){
+	height: 15px;
+	background-color: #cccccc;
+}
+
+#rota_table td:nth-child(1){
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #aaaaaa;
+}
+/**************** Registration page ****************/
+#registration {
+	padding-top: 80px;
+}
+
+#registration .button {
+	margin-top: 20px;
+}
+
+#registration input {
+	border-radius: 5px;
+}
+
+/**************** Login page ***********************/
+#login {
+	width: 40%;
+	margin: 0 auto;
+}
+
+#drop_lst {
+	font-size: 25px;
+	height: 41px;
+	padding: 5px;
+	margin-right: 80px;
+	margin-bottom: 15px;
+	background-color: #dddddd;
+	box-shadow: 2px 2px 5px #999999;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+.button {
+	background-color: #dddddd;
+	padding: 5px 10px 5px 10px;
+	height: 45px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999999;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+.button_med {
+	background-color: #dddddd;
+	padding: 5px 10px 5px 10px;
+	height: 35px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #999999;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+.button_small {
+	background-color: #dddddd;
+	padding: 2px 10px 2px 10px;
+	height: 18px;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #999999;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+/************* Keypad ***************/
+.btns {  
+	margin-top: 15px;
+	background-color: #dddddd;
+	width: 100px;
+	height: 100px;
+	font-size: 25px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999999;
+
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#keypad {
+	width: 500px;
+	height: 500px;
+}
+
+#calcfield {
+	font-size: 30px;
+	border-radius: 5px;
+}
+
+#row1, #row2, #row3, #row4 {
+	height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
